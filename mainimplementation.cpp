@@ -6,10 +6,6 @@
 using namespace std;
 using namespace chrono;
 
-//////////////////////////////////////////
-// AVL TREE
-//////////////////////////////////////////
-
 class AVLNode {
 public:
     int key;
@@ -107,10 +103,6 @@ public:
         return node;
     }
 };
-
-//////////////////////////////////////////
-// RED-BLACK TREE
-//////////////////////////////////////////
 
 enum Color { RED, BLACK };
 
@@ -251,10 +243,6 @@ public:
     }
 };
 
-//////////////////////////////////////////
-// TEST FUNCTIONS
-//////////////////////////////////////////
-
 void testSorted(int N) {
     AVLTree avl;
     RBTree rb;
@@ -335,10 +323,6 @@ void testRandom(int N) {
          << duration_cast<milliseconds>(end - start).count() << " ms\n";
     cout << "RB Rotations: " << rb.rotationCount << endl;
 }
-
-//////////////////////////////////////////
-// MAIN
-//////////////////////////////////////////
 
 int main() {
     int N = 1000;
